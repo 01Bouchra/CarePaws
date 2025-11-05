@@ -1,11 +1,11 @@
 body {
-  background-color: #FDF6EC;  /* Your preferred page background */
+  background-color: #FDF6EC;  /* page background */
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
 }
 
 nav {
-  background-color: #9B6128;  /* Your preferred navbar color */
+  background-color: #9B6128; 
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -132,11 +132,11 @@ header::before {
 .info-section {
   display: flex;                     /* Arrange text and image side by side */
   align-items: center;               /* Vertically center content */
-  justify-content: space-between;    /* Space between text and image */
+  justify-content: space-between;    /* to Space between text and image */
   max-width: 1300px;                 
   margin: 50px auto;                 
   padding: 40px 60px;                
-  background-color: #fff4e8;         /* Cozy card color */
+  background-color: #fff4e8;       
   border-radius: 25px;               
   border: 1px solid #e0cfc0;
   box-shadow: 0 8px 20px rgba(0,0,0,0.07);
@@ -1107,4 +1107,76 @@ body.thank-you-page {
 /* Optional: add spacing if needed */
 .return-link + * {
   margin-top: 1rem;
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  section, .info-section, .what-to-do {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  img, .info-image {
+    max-width: 100%;
+    margin: 20px 0;
+  }
+
+  h1, h2, h3, p, b, ul {
+    font-size: 1.2rem;
+  }
+
+
+
+/* Make text blocks fit smaller screens */
+section, .info-text, .text-block, .what-to-do {
+  width: 100%;         
+  max-width: 95%;        
+  margin: 10px auto;     
+}
+
+/* Make lists wrap nicely */
+ul {
+  padding-left: 20px;
+  list-style-position: inside;
+}
+
+/* Fix really long lines in paragraphs */
+p, li {
+  word-wrap: break-word;
+  line-height: 1.5;
+}
+
+/* Navbar mobile */
+nav {
+  flex-direction: column;   /* stack links vertically */
+  align-items: center;
+  text-align: center;
+  padding: 10px 0;
+}
+
+nav a {
+  margin: 8px 0;           /* space between links */
+  font-size: 1rem;         /* smaller on mobile */
+}
+
+/* Footer mobile */
+footer {
+  flex-direction: column;   /* stack items vertically */
+  align-items: center;
+  text-align: center;
+  padding: 15px 0;
+}
+
+footer p, footer a {
+  margin: 5px 0;           /* space between text and links */
+  font-size: 0.9rem;
+}
 }
