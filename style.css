@@ -1,0 +1,1110 @@
+body {
+  background-color: #FDF6EC;  /* Your preferred page background */
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+nav {
+  background-color: #9B6128;  /* Your preferred navbar color */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  border-radius: 0 0 20px 20px;
+}
+
+.logo {
+  margin: 0;
+}
+
+.nav-logo {
+  width: 130px;
+  height: 50px;
+  display: block;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #FFBE91;
+  font-size: 18px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  background-color: #ffdab9;
+  color: #333;
+}
+
+
+
+
+/* Header container */
+header {
+  position: relative;
+  width: 95%;
+  max-width: 1450px;
+  height: 450px;
+  margin: 5px auto 0 auto;
+  border-radius: 70px;
+  overflow: hidden;
+}
+
+
+/* Header image */
+.header-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Dark overlay */
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(95, 85, 78, 0.5); /* #5f554e at 50% opacity */
+  border-radius: 70px;
+  z-index: 1;
+}
+
+
+/*HOME PAGE HEADER STYLES*/
+/* Main title */
+.header-title {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'bold Domine', serif;
+  font-weight: 900;
+  font-size: 62px;
+  color: #FFBE91;
+  text-align: center;
+  z-index: 2;
+}
+
+/* Subtitle text */
+.header-subtext {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Domine', serif;
+  font-weight: 400;
+  font-size: 30px;
+  color: #FFBE91;
+  text-align: center;
+  z-index: 2;
+}
+
+/* Paragraph styling */
+
+.home-introduction {
+  font-family: 'Mulish', sans-serif;  
+  font-size: 1.8rem;                 
+  color: #5f554e;                     
+  text-align: center;                  
+  line-height: 1.7;                    
+  max-width: 1300px;                   
+  margin: 30px auto 50px auto;         
+  background-color: #fff4e8;         
+  padding: 25px 40px;                   
+  border-radius: 20px;                 
+  border: 1px solid #e0cfc0;            
+  box-shadow: 0 6px 15px rgba(0,0,0,0.05); 
+}
+
+
+.info-section {
+  display: flex;                     /* Arrange text and image side by side */
+  align-items: center;               /* Vertically center content */
+  justify-content: space-between;    /* Space between text and image */
+  max-width: 1300px;                 
+  margin: 50px auto;                 
+  padding: 40px 60px;                
+  background-color: #fff4e8;         /* Cozy card color */
+  border-radius: 25px;               
+  border: 1px solid #e0cfc0;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.07);
+  gap: 40px;                         /* Space between text and image */
+  flex-wrap: wrap;                   /* Wraps on smaller screens */
+}
+
+.info-text {
+  flex-basis: 55%;                   /* Text takes ~55% of the width */
+  font-family: 'Mulish', sans-serif;
+  font-size: 1.6rem;                 /* Slightly larger for readability */
+  line-height: 1.8;
+  color: #5f554e;
+  margin: 0;
+}
+
+.info-text b {
+  font-size: 1.8rem;      /* Makes the title stand out */
+  display: block;          /* Makes it behave like a block so margin works */
+  margin-bottom: 15px;     /* Adds space between title and paragraph */
+}
+
+.info-image {
+  width: 100%;           /* image fills its flex container */
+  max-width: 300px;      /* optional: caps the size */
+  height: auto;
+  margin-right: 7%;
+  border-radius: 20px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+  object-fit: cover;
+  flex-basis: 30%;       /* keeps container ~30% of flex width */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  padding: 30px;
+  background-color: #5F554E;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  width: 1300px;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 40px;
+  position: relative;
+  top: 80px;
+
+}
+
+
+.box-image img {
+  width: 400px ;
+  height: 500px ;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+
+
+.box-text {
+  color: #fdf6ec;
+  font-family: 'Mulish', sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  max-width: 700px;
+}
+
+.box-text h2 {
+  font-family: 'bold mulish', sans-serif;
+  font-weight: 800;
+  font-size: 2.2rem;
+  margin-bottom: 5x;
+  color: #fdf6ec
+}
+
+.box-text p {
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+  color: #fdf6ec;
+  text-align : left;
+}
+
+.box-text ul {
+  padding-left: 20px;
+}
+
+.box-text ul li {
+  margin-bottom: 8px;
+}
+
+.ending-text {
+  font-family: 'Mulish', sans-serif;  /* clean, readable font */
+  font-size: 1.8rem;                  /* slightly larger text */
+  color: #5f554e;                      /* warm dark brown */
+  text-align: center;                  /* centers the text */
+  line-height: 1.7;                    /* more readable spacing */
+  max-width: 1300px;                   /* readable line length */
+  margin: 130px auto 50px auto;        /* spacing from top and bottom */
+  background-color: #fff4e8;           /* soft peachy background */
+  padding: 25px 40px;                  /* inner spacing for comfort */
+  border-radius: 20px;                 /* rounded corners for soft look */
+  border: 1px solid #e0cfc0;           /* subtle border */
+  box-shadow: 0 6px 15px rgba(0,0,0,0.05); /* soft shadow for depth */
+}
+
+
+/* Footer Styles */
+.site-footer {
+  background-color: #5F554E;
+  color: #F5F5F5;
+  text-align: center;
+  padding: 15px 20px;
+  border-top: 2px solid #EADFD6;
+  border-radius: 0 0 20px 20px;
+  font-family: 'Domine', serif;
+  margin-top: 70px;
+}
+
+.footer-message {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #fdf6ec; 
+}
+
+/* Footer container */
+footer {
+  background-color: #5F554E;     /* Your cozy footer color */
+  padding: 20px 0;
+  text-align: center;            /* Center all content */
+  font-family: 'Mulish', serif;  /* Elegant font */
+  font-size: 16px;
+  color: #444;                   /* Soft text color */
+}
+
+/* Inline list container */
+footer ul {
+  display: inline-flex;          /* Inline and flexible */
+  gap: 20px;                     /* Space between links */
+  list-style: none;  
+  font-family:'mulish', serif;
+  font-size: large; 
+  color:#FFBE91;           /* No bullets */
+  padding: 0;
+  margin: 0;
+}
+
+/* Link styling */
+footer ul li a {
+  text-decoration: none;         /* No underline */
+  color: inherit;    
+  font-weight: 400;            /* Same as footer text */
+  transition: color 0.3s ease;
+}
+
+/* Hover effect */
+footer ul li a:hover {
+  color: #222;                   /* Slightly darker on hover */
+  text-decoration: underline;    /* Optional underline */
+}
+
+/* Hover effect */
+footer ul li a:hover {
+  color: #222;                   /* Slightly darker on hover */
+  text-decoration: underline;    /* Optional: underline on hover */
+}
+
+.footer-note {
+  font-size: 16px;
+  margin-top: 30px;
+  opacity: 1;
+   color: #fdf6ec; 
+}
+
+.bounce-img {
+  width: 120px;
+  animation: bounce 1.5s infinite ease-in-out;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+
+/*FOOD SAFETY PAGE HEADER STYLES*/
+.food-introduction h2 {
+margin-left: 5%;
+color: #5f554e;
+font-size: 2.2rem;
+}
+
+
+
+.food-introduction p,
+.A-LINE  h2,
+.dogs-part,
+.conclusion-food{
+  font-family: 'Mulish', sans-serif;  
+  font-size: 1.8rem;                 
+  color: #5f554e;                     
+  text-align: center;                  
+  line-height: 1.7;                    
+  max-width: 1300px;                   
+  margin: 30px auto 50px auto;         
+  background-color: #fff4e8;         
+  padding: 25px 40px;                   
+  border-radius: 20px;                 
+  border: 1px solid #e0cfc0;            
+  box-shadow: 0 6px 15px rgba(0,0,0,0.05); 
+}
+
+
+
+
+.dogsafefoods,.dogunsafefoods,.catsafefoods,.catunsafefoods {
+  display: flex;                     /* Arrange text and image side by side */
+  align-items: center;               /* Vertically center content */
+  justify-content: space-between;    /* Space between text and image */
+  max-width: 1300px;                 
+  margin: 50px auto;                 
+  padding: 40px 60px;                
+  background-color: #EAD7C2;         /* Cozy card color */
+  border-radius: 25px;               
+  border: 1px solid #e0cfc0;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.07);
+  gap: 40px;                         /* Space between text and image */
+  flex-wrap: wrap;                   /* Wraps on smaller screens */
+}
+
+.dogsafefoods h3,.dogunsafefoods h3,.catsafefoods h3,.catunsafefoods h3 {
+  flex-basis: 55%;                   /* Text takes ~55% of the width */
+  font-family: 'Mulish', sans-serif;
+  font-size: 1.6rem;                 /* Slightly larger for readability */
+  line-height: 1.8;
+  color: #5f554e;
+  margin: 0;
+}
+
+
+.dogsafefoods p,.dogunsafefoods p,.catsafefoods p,.catunsafefoods p {
+  flex-basis: 55%;                   /* Text takes ~55% of the width */
+  font-family: 'Mulish', sans-serif;
+  font-size: 1.6rem;                 /* Slightly larger for readability */
+  line-height: 1.8;
+  color: #5f554e;
+  margin: 0;
+}
+
+
+.dogsafefoods h1,.dogunsafefoods h1,.catsafefoods h1,.catunsafefoods h1{
+  font-size: 1.8rem;      /* Makes the title stand out */
+  display: block;          /* Makes it behave like a block so margin works */
+  margin-bottom: 15px;     /* Adds space between title and paragraph */
+}
+
+.dogsafefoods img ,.dogunsafefoods img,.catsafefoods img,.catunsafefoods img {
+  flex-basis: 40%;                   /* Image takes ~40% of width */
+  max-width: 100%;                    
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+  object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* TRAINING PAGE */
+
+.routines.introduction {
+  font-family: 'Mulish', sans-serif;
+  font-size: 1.8rem;
+  color: #5f554e;
+  text-align: left;
+  line-height: 1.7;
+  max-width: 1300px;
+  margin: 50px auto;
+  background-color: #fff4e8;
+  padding: 25px 40px;
+  border-radius: 20px;
+  border: 1px solid #e0cfc0;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+}
+
+.routines.line {
+  font-family: 'Mulish', sans-serif;
+  font-size: 1.8rem;
+  color: #5f554e;
+  text-align: left; 
+  line-height: 1.5; 
+  max-width: 1300px; 
+  margin : 30px auto 50px auto;
+}
+
+.daily-routines {
+  font-family: 'mulish', sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  color: #5F554E;
+  text-align: left;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  padding-left: 80px; /* or try 40px */
+}
+
+/*--------------------------/*/
+
+section {
+  margin-bottom: 60px; /* or 80px if you want more space between sections */
+}
+
+.Feeding-schedule,
+.excercice-playtime,
+.sleep-rest,
+.bonding-time {
+  position: relative;
+  max-width: 1300px;
+  margin: 30px auto;
+  margin-bottom: 45px;
+  padding-right: 80px; /* space for the icon on the right */
+}
+
+.Feeding-schedule h1,
+.excercice-playtime h1,
+.sleep-rest h1,
+.bonding-time h1 {
+  font-family: 'Domine', serif;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #5F554E;
+  text-align: left;
+  padding-left: 31%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  max-width: 700px;
+}
+
+.Feeding-schedule p,
+.excercice-playtime p,
+.sleep-rest p,
+.bonding-time p {
+  font-family: 'Mulish', sans-serif;
+  font-weight: 300;
+  font-size: 1.8rem;
+  color: #5F554E;
+  text-align: left;
+  padding-left: 30%;
+  margin-bottom: 100px;
+  max-width: 1000px;
+}
+
+.Feeding-schedule img,
+.excercice-playtime img,
+.sleep-rest img,
+.bonding-time img {
+  position: absolute;
+  padding-left: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 200px;
+  height: 200px;
+
+  /* Reset unwanted styles */
+  box-shadow: none;
+  background: none;
+  border: none;
+}
+
+
+
+
+
+/* TIPS SECTION STYLES */
+/* General section layout */
+section.tips {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #EAD7C2; 
+  padding: 60px 40px;
+  margin-bottom: 60px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Image styling */
+figure.image {
+  flex: 1 1 300px;
+  max-width: 400px;
+  margin: 0 40px 40px 0;
+  margin-top: 40px;
+  align-self :flex-end;
+}
+
+figure.image img {
+  width: 400px;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Article styling */
+article.tips {
+  flex: 2 1 500px;
+  max-width: 700px;
+}
+
+/* Headings */
+article.tips h2 {
+  font-family: 'Domine', serif;
+  font-size: 2.4rem;
+  color: #5F554E;
+  margin-bottom: 30px;
+}
+
+/* Numbered list styling */
+article.tips ul {
+  list-style: none; /* remove default bullets */
+  counter-reset: tip-counter;
+  padding-left: 0;
+}
+
+article.tips ul li {
+  counter-increment: tip-counter;
+  position: relative;
+  font-family: 'Mulish', sans-serif;
+  font-size: 1.6rem;
+  color: #5F554E;
+  background-color: #FFF4E8;
+  padding: 20px 25px 20px 60px;
+  margin-bottom: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Custom number circle */
+article.tips ul li::before {
+  content: counter(tip-counter);
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 30px;
+  height: 30px;
+  background-color: #EAD7C2;
+  color: white;
+  font-weight: bold;
+  font-family: 'Domine', serif;
+  font-size: 1.4rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+
+/* CLEANING PAGE CONTENT STYLES */
+
+/* GENERAL SECTION SPACING */
+section {
+  margin-bottom: 60px;
+}
+
+/* INTRO + CONCLUSION BLOCKS */
+.cleaning.introduction,
+.home.clean,
+.cleaning.conclusion,
+.cleaning.line {
+  font-family: 'Mulish', sans-serif;
+  font-size: 1.8rem;
+  color: #5f554e;
+  text-align: left;
+  line-height: 1.7;
+  max-width: 1300px;
+  margin: 50px auto;
+  background-color: #fff4e8;
+  padding: 25px 40px;
+  border-radius: 20px;
+  border: 1px solid #e0cfc0;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+}   /* DONE
+
+
+/* CLEANING TIPS SECTION — TRAINING STYLE */
+.grooming.tips {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #EAD7C2; 
+  padding: 60px 40px;
+  margin-bottom: 60px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+.grooming.tips ul {
+  flex: 2; /* takes more space */
+  list-style: none;
+  padding: 0;
+}
+
+.grooming.tips img {
+  flex: 1; /* takes less space */
+  max-width: 300px;
+  height: auto;
+  border-radius: 20px;
+}
+.grooming.tips ul li {
+  font-family: 'Mulish', sans-serif;
+  font-size: 1.6rem;
+  color: #5F554E;
+  background-color: #FFF4E8;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+} /* DONE */
+
+
+
+/* The main section for grooming tips */
+
+section.grooming {
+  display: flex;                 /* main container: horizontal layout */
+  align-items: flex-start;       /* align items to top */
+  justify-content: space-between; /* push text left, image right */
+  gap: 20px;                     /* space between text and image */
+  background-color: #EAD7C2;
+  padding: 40px;
+  border-radius: 20px;
+}
+
+/* Make h1 and ul stack vertically */
+section.grooming h1,
+section.grooming ul {
+  display: block;                /* ensures they are block elements */
+}
+
+section.grooming h1 {
+  font-family: 'Domine', serif;
+  font-size: 36px;
+  margin-bottom: 20px;           /* space between heading and list */
+  color: #333;
+}
+
+section.grooming ul {
+   font-family: 'Mulish', sans-serif;
+  font-size: 22px;               /* bigger text */
+  line-height: 2;                /* more spacing between lines */
+  max-width: 60%;  
+  color: #5F554E;              /* keeps the text width reasonable */
+}
+
+section.grooming img {
+  max-width: 350px;              /* bigger image */
+  height: auto;
+  margin-right: 5%;            /* space from the right edge */
+  border-radius: 10px;
+}
+
+section.grooming ul li {
+  margin-bottom: 15px;           /* space between list items */
+}
+
+
+
+
+/* The main section for cleaning advice */
+section.home-cleaning {
+  display: flex;                 /* main container: horizontal layout */
+  align-items: flex-start;       /* align items to top */
+  justify-content: space-between; /* push text left, image right */
+  gap: 20px;                     /* space between text and image */
+  background-color: #EAD7C2;    /* same background color */
+  padding: 40px;                 /* space inside the section */
+  border-radius: 20px;           /* rounded corners */
+}
+
+/* Make h1 and ul stack vertically */
+section.home-cleaning h1,
+section.home-cleaning ul {
+  display: block;                /* ensures they stack vertically */
+}
+
+section.home-cleaning h1 {
+  font-family: 'Domine', serif;  /* heading font */
+  font-size: 36px;               /* bigger heading */
+  margin-bottom: 20px;           /* space between heading and list */
+  color: #333;
+}
+
+section.home-cleaning ul {
+  font-family: 'Mulish', sans-serif; /* same as grooming section */
+  font-size: 22px;               /* bigger text */
+  line-height: 2;                /* more spacing between lines */
+  max-width: 60%;                /* keeps text width reasonable */
+  color: #5F554E;
+}
+
+section.home-cleaning img {
+  max-width: 350px;              /* bigger image */
+  height: auto;
+  margin-right: 10%;             /* space from the right edge */
+  border-radius: 10px;
+}
+
+section.home-cleaning ul li {
+  margin-bottom: 15px;           /* space between list items */
+}
+/* DONE */
+
+
+
+
+
+
+
+/* illness page styles */ 
+.illness.introduction,
+.illness.conclusion{
+  font-family: 'Mulish', sans-serif;
+  font-size: 1.8rem;
+  color: #5f554e;
+  text-align: left;
+  line-height: 1.7;
+  max-width: 1300px;
+  margin: 50px auto;
+  background-color: #fff4e8;
+  padding: 25px 40px;
+  border-radius: 20px;
+  border: 1px solid #e0cfc0;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+} 
+
+
+
+
+/* ===== Section container ===== */
+.illness.signs {
+  background-color: #FDF6EC; /* soft beige */
+  padding: 3rem; /* more breathing room */
+  border-radius: 20px;
+  max-width: 1200px; /* wider container */
+  margin: 3rem auto;
+  font-family: 'Poppins', sans-serif;
+  color: #5F554E;
+}
+
+/* ===== Title ===== */
+.illness.signs h1 {
+  font-family: 'mullish', sans-serif;  
+  font-size: 1.6rem; /* larger title */
+  text-align: center;
+  font-weight: 800;
+  color: #5F554E;
+  text-transform: lowercase;
+  margin-bottom: 2rem;
+}
+
+/* ===== 2 columns layout ===== */
+.illness.signs ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem; /* wider gaps between boxes */
+}
+
+/* ===== Each item box ===== */
+.illness.signs li {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  background-color: #e9d6c2;
+  border-radius: 24px;
+  padding: 2rem; /* larger box padding */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* subtle hover */
+.illness.signs li:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+/* ===== Icon styling ===== */
+.illness.signs img.icon {
+  width: 75px; /* larger icon */
+  height: 75px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+/* ===== Text inside ===== */
+.illness.signs span {
+  font-size: 1.1rem; /* larger text */
+  line-height: 1.7;
+  color: #3b2f23;
+}
+
+/* Emphasize first line (title part) */
+.illness.signs span::first-line {
+  font-weight: 600;
+  color: #2d261f;
+}
+
+/* ===== Responsive for phones ===== */
+@media (max-width: 800px) {
+  .illness.signs ul {
+    grid-template-columns: 1fr;
+  }
+
+  .illness.signs li {
+    flex-direction: row;
+    gap: 1rem;
+  }
+}
+
+
+
+.what-to-do {
+  display: flex;                 
+  align-items: flex-start;       /* Align items at the top */
+  justify-content: flex-start;   
+  max-width: 1300px;             
+  margin: 50px auto;             
+  padding: 40px 60px;            
+  background-color: #FDF6EC;     /* Change to your preferred background */
+  border-radius: 25px;           
+  border: 1px solid #a99380;                    
+  flex-wrap: wrap;               
+}
+
+/* Make the text (b + ul) a vertical block */
+.what-to-do b, 
+.what-to-do ul {
+  margin-left: 0;      /* optional, remove extra indent */
+  max-width: 100%;
+  flex-basis: auto;    /* don’t force width */
+  font-family: 'Mulish', sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.4;
+  color: #5f554e;
+  display: block;      /* ensures they stack vertically */
+  margin-bottom: 5px;
+}
+
+
+
+
+
+
+.contact.introduction {
+  font-family: 'Mulish', sans-serif;
+  font-size: 1.8rem;
+  color: #5f554e;
+  text-align: left;
+  line-height: 1.7;
+  max-width: 1300px;
+  margin: 50px auto 20px auto;
+  background-color: #fff4e8;
+  padding: 25px 40px;
+  border-radius: 20px;
+  border: 1px solid #e0cfc0;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+}
+
+
+
+.contact-form {
+  position: relative;
+  width: 700px; /* You can change this to any width you like */
+  margin: 50px auto; /* This centers the box horizontally */
+  padding: 30px;
+  background-color: #5F554E; /* Change to your preferred background */
+  border-radius: 16px; /* Rounded corners for cozy vibes */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08); /* Optional soft shadow */
+}
+
+
+/* Logo on the right, vertically centered */
+.contact-form img.form-logo {
+  position: absolute;       /* Remove from normal flow */
+  right: 7%;              /* Distance from the right edge */
+  top: 50%;                 /* Start at 50% from top */
+  transform: translateY(-50%); /* Perfect vertical centering */
+  width: 250px;
+  height: 250px;
+  object-fit: contain;
+}
+
+
+/* Style all labels inside the form */
+.contact-form label {
+  display: block;            /* Makes each label take up full width */
+  margin-bottom: 6px;        /* Adds space below the label */
+  font-family: 'Mulish', sans-serif;  
+  font-weight: 600;          /* Makes the label text bold-ish */
+  color: #FDF6EC;               /* Dark gray text for readability */
+}
+
+/* Style all input fields and the textarea */
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+.contact-form textarea {
+  width: 50%;               /* Makes fields stretch full width of form */
+  padding: 14px;             /* Adds inner space for comfy typing */
+  margin-bottom: 20px;       /* Adds space below each field */
+  border: 1px solid #FDF6EC;    /* Light gray border around fields */
+  border-radius: 8px;        /* Soft rounded corners */
+  font-size: 16px;           /* Comfortable text size */
+  background-color: #FFBE91;    /* White background (change if you want pastel) */
+  transition: border-color 0.3s ease; /* Smooth animation when focusing */
+}
+
+/* Override autofill background and text color */
+.contact-form input:-webkit-autofill,
+.contact-form input:-webkit-autofill:focus,
+.contact-form input:-webkit-autofill:hover,
+.contact-form textarea:-webkit-autofill {
+  background-color: #fdf6ec !important;  /* Your cozy background */
+  color: #5F554E !important;                /* Your preferred text color */
+  box-shadow: 0 0 0px 1000px #fffaf0 inset !important; /* Force background fill */
+  border: 1px solid #FFBE91 !important;  /* Your custom border */
+}
+
+
+/* Highlight border when user clicks into a field */
+.contact-form button {
+  display: block;             /* Make the button a block element so margin works */
+  margin: 30px auto 0 auto;   /* Top margin pushes it lower; auto left/right centers it */
+  background-color: #fdf6ec;     /* Soft pink background — change to any pastel you love */
+  color: #5F554E;                  /* White text for contrast */
+  padding: 14px 24px;            /* Vertical and horizontal padding for a comfy size */
+  border: none;                  /* Removes default border */
+  border-radius: 12px;           /* Rounded corners for cozy feel */
+  font-size: 16px;               /* Text size — adjust for emphasis */
+  font-weight: 600;              /* Slightly bolder text */
+  letter-spacing: 0.5px;         /* Adds gentle spacing between letters */
+  cursor: pointer;               /* Pointer cursor on hover */
+  transition: all 0.3s ease;     /* Smooth animation for hover effects */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+
+/* Hover effect */
+.contact-form button:hover {
+  background-color: #fdf6ec;     /* Slightly darker pink on hover */
+  transform: translateY(-2px);   /* Lifts the button up a bit */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15); /* Deeper shadow on hover */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* thanks page styles */
+
+
+body.thank-you-page {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FDF6EC;
+}
+
+.thank-you-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #FFBE91; /* soft pink or lavender */
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* gentle shadow */
+  max-width: 600px;
+  margin: 2rem auto; /* center horizontally */
+  border: 1px solid #f3cce3; /* optional soft border */
+}
+
+.thank-you-container h1 {
+  font-family: 'Domine', serif;
+  font-size: 2.8rem;
+  color: #333; /* warm brown */
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.thank-you-container p {
+  font-family: 'Mulish', sans-serif;
+  font-size: 2rem;
+  color: #333; /* dark brown */
+  text-align: center;
+  line-height: 1.6;
+}
+
+
+
+.return-link {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background-color: #333;         /* soft pink */
+  color: #FFBE91;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effect */
+.return-link:hover {
+  background-color: #333;         /* slightly deeper pink */
+  transform: translateY(-2px);       /* gentle lift */
+}
+
+/* Optional: add spacing if needed */
+.return-link + * {
+  margin-top: 1rem;
+}
